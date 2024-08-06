@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    for (int i=0; i<t; i++) {
+        int n, c;
+        cin >> n >> c;
+
+        int result;
+        result = (n % c == 0) ? n / c : n / c + 1;
+
+        cout << result << endl;
+    }
+    return 0;
+}
