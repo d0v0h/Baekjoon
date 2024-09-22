@@ -1,6 +1,2 @@
-x, y = map(int, input().split())
-
-if x >= y:
-    print(x+y+(y//10))
-else:
-    print(y+x+(x//10))
+a = list(map(int, input().split()))
+print(max(a)+min(a)+(min(a)//10))
