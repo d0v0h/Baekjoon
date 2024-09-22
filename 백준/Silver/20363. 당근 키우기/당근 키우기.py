@@ -1,2 +1,2 @@
-a = list(map(int, input().split()))
-print(max(a)+min(a)+(min(a)//10))
+x, y= map(int, input().split())
+print(x+y+(min(x,y)//10))
