@@ -12,8 +12,8 @@ def lcm(a, b):
 a, b = map(int, input().split())
 c, d = map(int, input().split())
 
-deno = lcm(b, d)
-nume = (a * (deno // b) + c * (deno // d))
+deno = b * d
+nume = (a * d + c * b)
 
 modul = gcd(deno, nume)
 print(nume // modul, deno // modul)
