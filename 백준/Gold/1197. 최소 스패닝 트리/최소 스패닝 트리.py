@@ -1,4 +1,5 @@
 import sys, heapq
+sys.setrecursionlimit(10**9)
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
