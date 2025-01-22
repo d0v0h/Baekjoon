@@ -1,0 +1,1 @@
+n, m = map(int, input().split()); result = 1 if n == m else 0; print(result)
