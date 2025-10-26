@@ -1,13 +1,9 @@
-n = int(input())
-m = 2
-
-result = []
-while n != 1:
-    if n % m == 0:
-        n //= m
-        result.append(m)
-        m = 2
+n=int(input())
+r=[];i=2
+while n > 1:
+    if n % i == 0:
+        n /= i
+        r.append(i)
     else:
-        m += 1
-
-print(*result, sep='\n')
+        i += 1
+print(*r, sep='\n')
