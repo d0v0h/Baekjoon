@@ -1,12 +1,10 @@
-n = int(input())
-arr = list(map(int, input().split()))
-
-result = 0
-for x in arr:
-	for i in range(2, x+1):
-		if x % i == 0:
-			if x == i:
-				result += 1
-			break
-		
-print(result)
+n=int(input())
+a=list(map(int,input().split()))
+for i in a:
+    if i == 1:
+        n-=1
+    for j in range(2,i):
+        if i % j == 0:
+            n-=1
+            break
+print(n)
