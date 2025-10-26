@@ -1,11 +1,8 @@
-n, k = map(int, input().split())
-
-result = []
-for i in range(1, n+1):
-    if n % i == 0:
-        result.append(i)
-
-if len(result) < k:
+a,b=map(int,input().split());r=[]
+for i in range(1,a+1):
+    if a % i == 0:
+        r.append(i)
+try:
+    print(r[b-1])
+except:
     print(0)
-else:
-    print(result[k-1])
