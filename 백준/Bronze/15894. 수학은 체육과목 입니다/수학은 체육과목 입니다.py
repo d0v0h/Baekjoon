@@ -1,1 +1,1 @@
-n=int(input());print(4*n)
+print(4*int(input()))
