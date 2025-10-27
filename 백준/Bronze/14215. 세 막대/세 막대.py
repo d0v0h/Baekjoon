@@ -1,8 +1,6 @@
-dist = list(map(int, input().split()))
-max_d = max(dist)
-dist.remove(max_d)
-
-if max_d >= sum(dist):
-    print(sum(dist) * 2 - 1)
+a=list(map(int,input().split()))
+if max(a) >= sum(a) - max(a):
+    a.remove(max(a))
+    print(sum(a)*2-1)
 else:
-    print(sum(dist) + max_d)
+    print(sum(a))
