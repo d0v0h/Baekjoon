@@ -1,11 +1,14 @@
-a, b, c = map(int, input().split())
-
-while a and b and c:
-    d = [a, b, c]; max_d = max(d); d.remove(max_d)
-
-    if a == b and b == c:  print('Equilateral')
-    elif max_d >= sum(d):    print('Invalid')
-    elif a != b and b != c and a != c:  print('Scalene')
-    else: print('Isosceles')
-
-    a, b, c = map(int, input().split())
+a=list(map(int,input().split()))
+while sum(a) != 0:
+    m=max(a)
+    r=sum(a)-m
+    if m >= r:
+        print("Invalid")
+    else:
+        if a[0] == a[1] == a[2]:
+            print("Equilateral")
+        elif a[0] != a[1] and a[1] != a[2] and a[0] != a[2]:
+            print("Scalene")
+        else:
+            print("Isosceles")
+    a=list(map(int,input().split()))
