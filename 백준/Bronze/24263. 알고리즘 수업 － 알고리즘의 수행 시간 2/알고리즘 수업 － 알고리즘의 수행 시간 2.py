@@ -1,2 +1,1 @@
-n = int(input())
-print(n, 1, sep='\n')
+print(int(input()),1,sep='\n')
