@@ -1,2 +1,1 @@
-n=int(input())
-print(n*n, 2, sep='\n')
+print(int(input())**2,2)
